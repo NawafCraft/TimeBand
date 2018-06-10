@@ -24,7 +24,7 @@ class BanTime extends PluginBase {
    
    public function getAPI($name){
        if(!is_string($name)){
-       return new API($name->getName());
+       return new NawafPlugin\API($name->getName());
        }else{
        return FALSE;
        }
